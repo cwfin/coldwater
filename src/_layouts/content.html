@@ -1,0 +1,29 @@
+---
+layout: default
+page-id: content
+---
+
+<div class="masthead">
+  <div class="masthead__logo">
+    <a href="/"><img src="/img/cop-logo.png" alt="Coldwater Opportunity Partners Logo" /></a>
+  </div>
+</div>
+<div class="page">
+  <div class="page__content">
+    {{ content }}
+  </div>
+  <div class="page__sidebar">
+    <ul class="nav">
+      <li class="nav__item"><a href="/">Home</a></li>
+      <li class="nav__item{% if page.slug == 'why-coldwater' %} nav__item--selected{% endif %}"><a href="/why-coldwater.html">Why Coldwater?</a></li>
+      <li class="nav__item{% if page.slug == 'embracing-the-entrepreneurial-spirit' %} nav__item--selected{% endif %}"><a href="/embracing-the-entrepreneurial-spirit.html">Embracing the Entrepreneurial Spirit</a></li>
+      <li class="nav__item{% if page.slug == 'our-edge' %} nav__item--selected{% endif %}"><a href="/our-edge.html">Our Edge</a></li>
+      <li class="nav__item nav__item--subheader"><small>Our Partners</small></li>
+      {% for partner in site.data.partners %}
+      <li class="nav__item{% if page.slug == partner.id %} nav__item--selected{% endif %}"><a href="/bios/{{ partner.id }}.html">{{ partner.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>
+

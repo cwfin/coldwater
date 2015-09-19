@@ -1,0 +1,25 @@
+.bullet-seperated-list {
+	margin:0;
+	padding:0;
+	list-style:none;
+
+	font-size:rem(20);
+	text-transform: uppercase;
+
+	@include respond-to(rem(720)) {
+		.bullet-seperated-list__item {
+			display:inline-block;
+		}
+
+		.bullet-seperated-list__item:after {
+			content:"•";
+			display:inline-block;
+			margin-left:em(10);
+			margin-right:em(10);
+		}
+
+		.bullet-seperated-list__item:last-child {
+			&:after { display:none; }
+		}
+	}
+}

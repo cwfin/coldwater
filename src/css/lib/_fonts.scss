@@ -1,0 +1,11 @@
+@mixin typeThin {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+@mixin typeSemibold {
+	font-family: "proxima-nova",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}

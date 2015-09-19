@@ -1,0 +1,20 @@
+@mixin respond-to($breakpoint) {
+    @media only screen and (min-width: $breakpoint) { 
+    	@content; 
+   	}
+}
+
+@mixin vertically-center {
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	top: 50%; left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+
+@function rem($pxval, $base: 16) {
+  @return ($pxval / $base) * 1rem;
+}

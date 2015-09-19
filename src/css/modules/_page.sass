@@ -1,0 +1,21 @@
+.page
+  +outer-container
+  .page__sidebar
+    +pad
+    margin-bottom: 4em
+
+
+  .page__content
+    +pad
+    margin-bottom: 4em
+    line-height: 1.75em
+
+  +respond-to(rem(720))
+
+    .page__sidebar
+      +span-columns(4)
+  
+
+    .page__content
+      +span-columns(8)
+  

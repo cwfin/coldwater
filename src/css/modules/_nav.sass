@@ -1,0 +1,38 @@
+.nav
+  margin: 0
+  padding: 0
+  list-style: none
+
+  .nav__item
+    border-bottom: 1px dotted $light-green
+
+    a,
+    a:link,
+    a:visited,
+    a:active,
+    a:hover
+      display: block
+      padding: 0.5em
+      background-color: $white
+      +transition(background-color 0.2s ease-in-out)
+      color: $dark-blue
+      text-decoration: none
+
+      &:hover
+        background-color: lighten($light-green, 20%)
+        border-bottom: 0
+
+    &:last-child
+      border-bottom: 0
+
+    &.nav__item--subheader
+      padding: 2em 0.5em 0.5em
+      text-transform: uppercase
+      color: #999999
+      border-bottom: 0
+
+    &.nav__item--selected
+      a
+        background-color: lighten($light-green, 25%)
+        +typeSemibold
+

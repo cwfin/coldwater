@@ -1,0 +1,17 @@
+- name: Gregory S. Johnson
+  id: gregory-johnson
+  phone: 773-909-3089
+  email: gjohnson@coldwaterop.com
+  nickname: Gregory
+
+- name: Michael J. Ryan
+  id: michael-ryan
+  phone: 630-306-1917
+  email: mryan@coldwaterop.com
+  nickname: Michael
+
+- name: James E. Honan, Jr.
+  id: james-honan
+  phone: 630-559-6815
+  email: jhonan@coldwaterop.com
+  nickname: James

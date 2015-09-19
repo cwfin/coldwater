@@ -1,0 +1,88 @@
+// block layouts
+
+.b
+  width: 100%
+  padding-top: em(60)
+  padding-bottom: em(60)
+
+  +respond-to(rem(720))
+    padding-top: em(100)
+    padding-bottom: em(100)
+
+  &.b--centered
+    text-align: center
+
+  .b__container
+    +outer-container
+
+    &.b__container--vertically-center
+      +vertically-center
+
+
+  // grid modifiers
+
+  &.b--single 
+    .b__cell
+      +span-columns(12)
+      +omega
+      margin-bottom: rem(60)
+
+      +respond-to(rem(720))
+        +span-columns(10)
+        +shift(1)
+
+    .b__split .b__cell
+  
+      +respond-to(rem(720))
+        +span-columns(5 of 10)
+        +shift(0)
+
+
+
+  &.b--thirds .b__cell
+    +span-columns(12)
+    margin-bottom: rem(60)
+
+    +respond-to(rem(720))
+      +span-columns(4)
+      margin-bottom: 0
+
+  &.b--quad .b__cell
+    +span-columns(12)
+    margin-bottom: rem(60)
+
+    +respond-to(rem(720))
+      +span-columns(4)
+      +omega(3n)
+      margin-bottom: rem(60)
+
+      &:nth-child(2n)
+        +shift(2)
+
+  &.b--no-margin
+    margin-bottom: 0
+    padding-bottom: 0
+
+// modifiers for color styling
+
+.b
+  &.b--background-image,
+  &.b--background-blue
+    color: $white
+
+    h1, h2, h3
+      color: $light-green
+
+  &.b--background-image
+    background: url(/img/chicago.jpg) no-repeat center bottom fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+    
+  &.b--background-blue
+    background-color: $dark-blue
+
+    +respond-to(rem(720))
+      padding-top: em(60)
+      padding-bottom: em(60)

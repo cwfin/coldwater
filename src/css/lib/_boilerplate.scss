@@ -1,0 +1,101 @@
+html {
+    @include typeThin;
+}
+
+
+html,
+button,
+input,
+select,
+textarea {
+    color: $dark-blue;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+//downward margins only
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr{
+    margin-top: 0;
+    margin-bottom:1.5rem;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  @include typeSemibold;
+  letter-spacing:rem(1.5);
+}
+
+h1 { font-size:rem(32); text-transform: uppercase; }
+h2 { font-size:rem(26); color: $light-green }
+h3 { font-size:rem(22); }
+h4 { font-size:rem(20); }
+h5 { font-size:rem(18); }
+h6 { font-size:rem(18); }
+
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+  color: $dark-blue;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px dotted $light-green;
+}
+
+
+
+

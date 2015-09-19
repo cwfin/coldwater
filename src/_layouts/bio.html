@@ -1,0 +1,23 @@
+---
+layout: content
+---
+
+<p class="header header--partner">Our Partners</p>
+
+{{ content }}
+
+{% for partner in site.data.partners %}
+{% if partner.id == page.slug %}
+<ul class="contact">
+    <li class="contact__item contact__item--phone">
+        <span class="icon-phone"></span>
+        <a href="tel:{{ partner.phone }}">{{ partner.phone }}</a>
+    </li>
+    <li class="contact__item contact__item--email">
+        <span class="icon-envelope"></span>
+        <a href="mailto:{{ partner.email }}">Email {{ partner.nickname }}</a>
+    </li>
+</ul>
+{% endif %}
+{% endfor %}
+

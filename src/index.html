@@ -1,0 +1,75 @@
+---
+layout: default
+title: Coldwater Opportunity Partners
+slug: home
+---
+<section id="home-header" class="hero b b--centered b--background-image">
+      <div class="vertically-center">
+        <div class="hero__logo">
+            <img src="/img/cop-logo.png" alt="Coldwater Opportunity Partners Logo" />
+            <div class="hero__logo-line"><div></div></div>
+        </div>
+
+        <h2 class="hero__header">Serving the Middle Markets</h2>
+        <ul class="bullet-seperated-list">
+            <li class="bullet-seperated-list__item">Private Investing</li>
+            <li class="bullet-seperated-list__item">Mergers &amp; Acquisitions</li>
+            <li class="bullet-seperated-list__item">Strategic Consulting</li>
+        </ul>
+      </div>
+</section>
+
+<section class="b b--centered b--single b--no-margin">
+    <div class="b__container">
+        <h1 class="header header--underline">Why Coldwater Opportunity Partners?</h1>
+        <div class="b__cell">
+            <p>The partners of Coldwater Opportunity Partners (“Coldwater”) have more than 80 years of experience originating, analyzing, and managing investment in middle market companies. We are dedicated and focused upon finding companies and opportunities where we can assist in providing superior returns to our investment partners and management.</p>
+            <p><a href="/why-coldwater.html" class="button">Learn More About Coldwater Opportunity Partners</a></p>
+        </div>
+        <div class="b__split">
+            <div class="b__cell">
+                <h2>Embracing the Entrepreneurial Spirit</h2>
+                <p>We are a boutique private investment firm focusing on entrepreneurial middle market companies. Our approach enables our partners and advisors to complete investments in efficient time frames.</p>
+                <p><a href="/embracing-the-entrepreneurial-spirit.html" class="button">Learn How We Embrace the Entrepreneurial Spirit</a></p>
+            </div>
+            <div class="b__cell">
+                <h2>Our Edge</h2>
+                <p>We target private/public companies, divisions of private/public firms, and owners seeking liquidity/capital. Our edge is to partner with management and help unleash the entrepreneurial spirit to create long term value.</p>
+                <p><a href="/our-edge.html" class="button">Learn More About Our Edge</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="b b--centered b--thirds">
+    <div class="b__container">
+        <h1 class="header header--underline">Partners</h1>
+        {% for partner in site.data.partners %}
+        <div class="b__cell partner">
+            <h2 class="partner__name">{{ partner.name }}</h2>
+            <ul class="contact">
+                <li class="contact__item contact__item--phone">
+                    <span class="icon-phone"></span>
+                    <a href="tel:{{ partner.phone }}">{{ partner.phone }}</a>
+                </li>
+                <li class="contact__item contact__item--email">
+                    <span class="icon-envelope"></span>
+                    <a href="mailto:{{ partner.email }}">Email {{ partner.nickname }}</a>
+                </li>
+            </ul>
+            <p><a href="/bios/{{ partner.id }}.html" class="button button--small button--secondary">More About {{ partner.nickname }}</a></p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="b b--centered b--background-blue">
+    <div class="b__container">
+        <h3 class="header header--small">Coldwater Opportunity Partners is located at</h3>
+        <ul class="bullet-seperated-list">
+            <li class="bullet-seperated-list__item">12 Salt Creek Lane</li>
+            <li class="bullet-seperated-list__item">Suite 400</li>
+            <li class="bullet-seperated-list__item">Hinsdale, IL 60521</li>
+        </ul>
+    </div>
+</section>

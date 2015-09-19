@@ -2,13 +2,20 @@
 	text-shadow: 0px 0px 4px #000000;
 
 	.hero__logo {
-		position:relative;
-		margin-bottom:em(80);		
+		position: relative;
+		margin-bottom: em(80);
 	}
+
+	.hero__logo-img {
+		max-width: 400px;
+		padding: 1em;
+		margin: auto;
+		margin-bottom: em(40);
+	}
+
 
 	.hero__logo-line {
 		position:absolute;
-		margin-top:-32px;
 		width:100%;
 		padding-bottom:2px;
 		border-bottom:1px solid $white;
@@ -26,4 +33,3 @@
   }
 
 }
-

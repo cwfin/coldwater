@@ -6,7 +6,7 @@ slug: why-coldwater
 
 # Why Coldwater Financial?
 
-The partners of Coldwater Financial ("Coldwater") have more than 80 years of experience originating, analyzing, and managing investment in middle market companies. We are dedicated and focused upon finding companies and opportunities where we can assist in providing superior returns to our investment partners and management.
+The partners of Coldwater Financial ("Coldwater") have more than 25 years of experience originating, analyzing, and managing investment in middle market companies. We are dedicated and focused upon finding companies and opportunities where we can assist in providing superior returns to our investment partners and management.
 
 
 ## Alignment with Investors & Management

@@ -6,9 +6,9 @@ slug: embracing-the-entrepreneurial-spirit
 
 # Embracing the Entrepreneurial Spirit
 
-We are a boutique private investment firm focusing on entrepreneurial middle market companies. Our approach enables our Partners & strategic advisors to complete investments in efficient time frames. 
+We are a boutique private investment firm focusing on entrepreneurial middle market companies. Our approach enables our Partners & strategic advisors to complete investments in efficient time frames.
 
-Based upon our 80 years of deal experience, we have established an extensive network of operating managers, senior and subordinated lenders and investors.  Our significant deal execution and diverse industry experience provides clear advantages to completing due diligence and consummating investment opportunities.
+Based upon our 25 years of deal experience, we have established an extensive network of operating managers, senior and subordinated lenders and investors.  Our significant deal execution and diverse industry experience provides clear advantages to completing due diligence and consummating investment opportunities.
 
 ## Coldwater’s target market is listed below:
 
@@ -19,7 +19,7 @@ Based upon our 80 years of deal experience, we have established an extensive net
 
 ## Industry focus:
 
-- Manufacturing and value-added distribution 
+- Manufacturing and value-added distribution
 - Specialty retail and business services
 - Media, telecom, marketing & communications
 - Information technology
